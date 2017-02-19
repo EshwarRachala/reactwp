@@ -10,7 +10,7 @@
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
-    "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
+    "lint": "eslint --ext .js,.jsx src test/unit/specs test/e2e/specs"
   },
   "keywords": [],
   "author": "Eshwar <rachal.2000@gmail.com>",
@@ -42,6 +42,7 @@
     "css-loader": "^0.26.1",
     "eslint": "^3.14.1",
     "eslint-config-airbnb-base": "^11.0.1",
+    "eslint-config-react": "1.1.7",
     "eslint-config-standard": "^6.1.0",
     "eslint-friendly-formatter": "^2.0.7",
     "eslint-import-resolver-webpack": "^0.8.1",
@@ -73,8 +74,8 @@
     "nightwatch": "^0.9.12",
     "opn": "^4.0.2",
     "ora": "^1.1.0",
-    "react-tap-event-plugin": "2.0.1",
     "phantomjs-prebuilt": "^2.1.14",
+    "react-tap-event-plugin": "2.0.1",
     "selenium-server": "^3.0.1",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
