@@ -1,4 +1,3 @@
-/*eslint-disable */
 var path = require('path');
 var utils = require('./utils');
 var config = require('../config');
