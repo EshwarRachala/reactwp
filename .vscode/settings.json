@@ -1,8 +1,7 @@
 {
   "eslint.enable": true,
-  "eslint.autoFixOnSave": true,
-  "eslint.run": "onType",
-  "editor.fontSize": 16,
+  "eslint.run": "onSave",
+  "editor.fontSize": 14,
   "files.eol": "\n",
   "eslint.options": {
     "no-return-assign": [
