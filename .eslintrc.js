@@ -2,8 +2,12 @@
 
 module.exports = {
   root: true,
+  globals: {
+    'react': true,
+  },
   parser: 'babel-eslint',
   parserOptions: {
+    ecmaVersion: 6,
     sourceType: 'module',
     ecmaFeatures: {
       'experimentalObjectRestSpread': true,
@@ -20,8 +24,7 @@ module.exports = {
   extends: 'eslint:recommended',
   extends: 'airbnb-base',
   extends: 'react',
-  plugins: [
-    'html', 'react'
+  plugins: ['react'
   ],
   'settings': {
     'import/resolver': {
@@ -35,12 +38,13 @@ module.exports = {
     'no-shadow': 'off',
     'import/prefer-default-export': 'off',
     'no-param-reassign': 'off',
-    'import/extensions': ['error', 'always', {
-      'js': 'never'
-    }],
-    'import/no-extraneous-dependencies': ['error', {
-      'optionalDependencies': ['test/unit/index.js']
-    }],
+    // 'import/extensions': ['error', 'always', {
+    //   'js': 'never',
+    //   'jsx': 'never',
+    // }],
+    // 'import/no-extraneous-dependencies': ['error', {
+    //   'optionalDependencies': ['test/unit/index.js']
+    // }],
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
   }
 }

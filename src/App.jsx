@@ -7,10 +7,13 @@ const style = {
 
 class App extends Component {
     render () {
-      return (<div>
+    // eslint-disable-next-line
+    return (<div>
       <h1>Hi from react Component</h1>
       <RaisedButton label="Submit" secondary style={style} />
     </div>);
+
+    // eslint-disable-next-line
   }
 }
 export default App;

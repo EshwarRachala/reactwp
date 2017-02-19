@@ -1,31 +1,30 @@
 {
-    "eslint.enable": true,
-    "eslint.autoFixOnSave": true,
-    "eslint.run": "onType",
-    "editor.fontSize": 16,
-    "files.eol": "\n",
-    "eslint.options": {
-        "no-return-assign": [
-            "warn",
-            "always"
-        ],
-        "indent": [
-            "warn",
-            "tab"
-        ],
-        "linebreak-style": [
-            "warn",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "single"
-        ],
-        "semi": [
-            "warn",
-            "never"
-        ]
-    },
-    "vsicons.presets.angular": false,
-    "javascript.validate.enable": true
+  "eslint.enable": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.run": "onType",
+  "editor.fontSize": 16,
+  "files.eol": "\n",
+  "eslint.options": {
+    "no-return-assign": [
+      "warn",
+      "always"
+    ],
+    "indent": [
+      "warn",
+      "space"
+    ],
+    "linebreak-style": [
+      "warn",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "warn",
+      "never"
+    ]
+  },
+  "vsicons.presets.angular": false
 }
