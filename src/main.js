@@ -16,7 +16,7 @@ const muiTheme = getMuiTheme({
     textColor: cyan500,
   },
   appBar: {
-    height: 50,
+    height: 40,
   },
 });
 
@@ -25,7 +25,7 @@ const muiTheme = getMuiTheme({
 const Main = () => (
   <MuiThemeProvider muiTheme={muiTheme} >
     <div>
-      <AppBar title="My AppBar" />
+      <AppBar title="React/Webpack 2 Project Demo" />
       <App></App>
     </div>
   </MuiThemeProvider >
