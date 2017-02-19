@@ -20,10 +20,16 @@ const muiTheme = getMuiTheme({
   },
 });
 
-const AppUI = () => (
-  <MuiThemeProvider muiTheme={muiTheme}>
-    <App />
-  </MuiThemeProvider>
+
+
+const Main = () => (
+  <MuiThemeProvider muiTheme={muiTheme} >
+    <div>
+      <AppBar title="My AppBar" />
+      <App></App>
+    </div>
+  </MuiThemeProvider >
 );
 
-ReactDOM.render(<AppUI></AppUI>, document.getElementById('app'));
+
+ReactDOM.render(<Main />, document.getElementById('app'));
