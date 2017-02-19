@@ -1,3 +1,4 @@
+# Ignore files
 build/*.js
 config/*.js
 dist/
