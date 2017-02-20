@@ -1,33 +1,28 @@
 import React from 'react';
 import { render } from 'react-dom';
-import injectTapEventPlugin from 'react-tap-event-plugin';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { Provider } from 'react-redux';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
+import injectTapEventPlugin from 'react-tap-event-plugin';
+injectTapEventPlugin();
+
+import configureStore from './store';
+let store = configureStore();
+
 import AppBar from 'material-ui/AppBar';
-import { cyan500 } from 'material-ui/styles/colors';
 
 import App from './App';
 
-injectTapEventPlugin();
-
-const muiTheme = getMuiTheme({
-    palette: {
-        textColor: cyan500
-    },
-    appBar: {
-        height: 40
-    }
-});
-
-
-const Main = () => (
-  <MuiThemeProvider muiTheme={muiTheme} >
+render(
+  <Provider store={store}>
+    <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
     <div>
-      <AppBar title="React/Webpack 2 Project Demo" />
+    <AppBar title="React/Webpack 2 Project Demo" />
       <App />
     </div>
-  </MuiThemeProvider >
+    </MuiThemeProvider>
+  </Provider>, document.getElementById('app')
 );
 
-
-render(<Main />, document.getElementById('app'));
