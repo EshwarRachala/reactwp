@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
@@ -9,6 +9,7 @@ import { cyan500 } from 'material-ui/styles/colors';
 import App from './App';
 
 injectTapEventPlugin();
+
 const muiTheme = getMuiTheme({
     palette: {
         textColor: cyan500
@@ -29,4 +30,4 @@ const Main = () => (
 );
 
 
-ReactDOM.render(<Main />, document.getElementById('app'));
+render(<Main />, document.getElementById('app'));
