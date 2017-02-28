@@ -49,7 +49,7 @@ render(
     <MuiThemeProvider muiTheme={muiTheme}>
       <div>
           <AppBar title={<span style={styles.title}>React Webpack</span>}/>
-          <App />
+          <App store={store}/>
       </div>
     </MuiThemeProvider>
   </Provider>,
