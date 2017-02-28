@@ -8,10 +8,22 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
+import { changeName } from './store/actions';
+
 injectTapEventPlugin();
 
 import configureStore from './store';
 let store = configureStore();
+
+console.log(store.getState());
+
+let unsubscribe = store.subscribe(() =>
+  console.log(store.getState())
+);
+
+store.dispatch(changeName('peter'));
+
+unsubscribe();
 
 import AppBar from 'material-ui/AppBar';
 

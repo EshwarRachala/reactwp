@@ -38,6 +38,7 @@ module.exports = {
     'no-shadow': 'off',
     'import/prefer-default-export': 'off',
     'no-param-reassign': 'off',
+    'react/self-closing-comp':'off',
     // 'import/extensions': ['error', 'always', {
     //   'js': 'never',
     //   'jsx': 'never',
